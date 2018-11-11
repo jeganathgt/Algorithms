@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-int print_all_combinations (char *array, int start, int length, char *output)
+int print_all_combinations (char *array, int arrey_len, int start, int length, char *output)
 {
     int i;
 
@@ -10,9 +11,9 @@ int print_all_combinations (char *array, int start, int length, char *output)
         return 0;
     }
 
-    for(i= 0; i<length; i++) {
+    for(i= 0; i <arrey_len; i++) {
         output[start] = array[i];
-        print_all_combinations (array, start + 1, length, output);
+        print_all_combinations (array, arrey_len, start + 1, length, output);
     }
 
 
@@ -24,6 +25,7 @@ int main()
     int  size        =  0;
     char array[100]  = {0};
     char output[100] = {0};
+    int  array_len    = 0;
 
     printf("Enter the length of combinations:");
     scanf("%d",&size);
@@ -33,8 +35,9 @@ int main()
     }
 
     scanf("%s",array);
+    array_len = strlen(array);
 
-    print_all_combinations (array, 0, size, output);
+    print_all_combinations (array, array_len, 0, size, output);
 
     printf("\n");
 
