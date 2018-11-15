@@ -1,0 +1,9 @@
+Q8.	Program	to	find	the	minimum	(or	maximum)	element	of	an	array
+Given	an	array,	write	functions	to	find	minimum	and	maximum	elements	
+in	it.
+
+
+int arr[]	=	{	12,	1234,	45,	67,	1	};
+Output:
+Minimum	element	of	array:	1	
+Maximum	element	of	array:	1234	

@@ -1,0 +1,7 @@
+Q5.	Recursive	Implementation	of	atoi()
+The	atoi() function	takes	a	string	(which	represents	an	integer)	as	an	
+argument	and	returns	its	value.
+• How	to	compute	recursively?
+
+
+• char str[] = "112"; ,	output=	112
