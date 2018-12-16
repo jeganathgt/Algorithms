@@ -6,25 +6,6 @@ int position[100]   = {0};
 
 int board[20][20] = {0};
 
-#if 0
-int init_board (int dimension) 
-{
-    int i =0;
-    for (i = 0; i <20; i++)
-        board[i] = (int *)calloc(1, 20);
-
-    return 0;
-}
-
-int free_board(int dimension) 
-{
-    int i = 0;
-    for (i = 0; i < 20; i++)
-        free(board[i]);
-
-    return 0;
-}
-#endif
 
 int dump_board (int *array, int dimension) 
 {
@@ -175,9 +156,7 @@ int main()
     printf("Enter the number:");
     scanf("%d",&number);
 
-//    init_board (number); 
     place_queen(0, position, number);
 
-  //  free_board(number); 
     return 0;
 }
