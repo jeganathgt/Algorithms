@@ -17,6 +17,14 @@ int dump_board (int *array, int dimension)
 
     printf("solution:%d:\n", ++count);
     printf("==================\n");
+
+     printf("[ ");
+     for(i = 0; i < dimension; i++) {
+        printf("(%d, %d),", array[i], i);
+    }
+    printf("] \n\n");
+
+#if 0
     for (i = 0; i <dimension; i++) {
         for (j = 0; j<dimension; j++)
             printf("%d ", board[i][j]);
@@ -28,7 +36,7 @@ int dump_board (int *array, int dimension)
         for (j = 0; j<dimension; j++)
             board[i][j] = 0;
     }
-
+#endif
     return 0;
 
 }
